@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="14dp"
+    android:padding="16dp">
+
+    <Switch
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw_IS"
+        android:textSize="18dp"
+        android:text="Intraday Stock"
+        android:gravity="left"/>
+    <Switch
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw_II"
+        android:textSize="18dp"
+        android:text="Intraday Index"
+        android:gravity="left"/>
+    <Switch
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw_PS"
+        android:textSize="18dp"
+        android:text="Positional Stock"
+        android:gravity="left"/>
+    <Switch
+        android:paddingBottom="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw_PI"
+        android:textSize="18dp"
+        android:text="Positional Index"
+        android:gravity="left"/>
+    <Switch
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw_OS"
+        android:textSize="18dp"
+        android:text="Option Statergy"
+        android:gravity="left"/>
+
+</LinearLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.PreferenceActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/preference_progressbar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ProgressBar
+
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:max="100"
+            android:backgroundTint="@color/white"
+            android:indeterminateTint="@color/colorPrimary" >
+        </ProgressBar>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/preference_RelativeL">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/Toolbar_preference"
+            app:title="Preference"
+            app:titleTextColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_below="@+id/Toolbar_preference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+
+            android:id="@+id/L1_preference"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="CALL TYPE"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+
+
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <CheckBox
+                        android:id="@+id/checkboxPosition_preference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Position"
+
+                        />
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/notify_positional"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_notify_grey"
+                        android:background="@color/white"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <CheckBox
+                        android:id="@+id/checkboxOptional_preference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Optional"
+
+                        />
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:layout_width="40dp"
+                        android:id="@+id/notify_optional"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_notify_grey"
+                        android:background="@color/white"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <CheckBox
+                        android:id="@+id/checkBoxIntraday_preference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Intraday"
+                        />
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:layout_width="40dp"
+                        android:id="@+id/notify_intraday"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_notify_grey"
+                        android:background="@color/white"
+                        />
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="CALL ACTION"
+                    android:layout_gravity="center"
+
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <CheckBox
+                        android:id="@+id/checkBoxBuy_preference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buy"
+
+                        />
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:layout_width="40dp"
+                        android:id="@+id/notify_buy"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_notify_grey"
+                        android:background="@color/white"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <CheckBox
+                        android:id="@+id/checkBoxSell_preference"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sell"
+                        />
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:layout_width="40dp"
+                        android:id="@+id/notify_sell"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_notify_grey"
+                        android:background="@color/white"
+                        />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/R1_preference"
+            android:layout_below="@+id/L1_preference"
+            android:layout_above="@+id/RBtn_preference"
+            >
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/R_activityStock_preference"
+
+
+                >
+
+                <EditText
+                    android:elevation="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search your stock..."
+                    android:id="@+id/searchTxt_preference"
+
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="10dp"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:background="@drawable/rounded_white_background"
+                    android:padding="10dp"
+                    android:textAlignment="textStart"
+
+                    android:layout_marginTop="10dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+
+                android:id="@+id/R2_preference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:layout_below="@+id/R_activityStock_preference"
+                >
+
+                <android.support.v7.widget.RecyclerView
+
+                    android:id="@+id/StockRecyclerView_preference"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/RBtn_preference"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_done_preference"
+                android:textColor="@color/white"
+                android:background="@drawable/rounded_red_back"
+                android:text="Subscribe"
+                android:onClick="onSubscribeClicked"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

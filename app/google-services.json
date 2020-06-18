@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "276426168116",
+    "firebase_url": "https://eqsisalerts-f7a1c.firebaseio.com",
+    "project_id": "eqsisalerts-f7a1c",
+    "storage_bucket": "eqsisalerts-f7a1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276426168116:android:00a935ed19b3daa1",
+        "android_client_info": {
+          "package_name": "com.eqsis.notifications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276426168116-fjhv4hlt4dmc22hvbb7jpkusm6qgiu24.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eqsis.notifications",
+            "certificate_hash": "1be35f50c15c9fef6c8cda5e0fa9244c86ad0955"
+          }
+        },
+        {
+          "client_id": "276426168116-iqufangpd6bb3cqg7t585pi1ld5ptj46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR8LQ9ZXm951xTYhVzqHJTJe-5f2K762s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276426168116-iqufangpd6bb3cqg7t585pi1ld5ptj46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

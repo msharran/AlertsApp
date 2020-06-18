@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:clickable="true"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="1dp"
+
+        android:padding="3dp"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:padding="8dp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkbox_RlistItem_preference"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:hint="Token"
+                android:textAllCaps="true"
+
+                android:textSize="14dp"
+                android:textAlignment="center" />
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:id="@+id/Imagebtn_Rlistitem_preference"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/white"
+                android:src="@drawable/ic_notify_grey"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SettingsActivity"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/Toolbar_Settings"
+        app:title="Settings"
+        app:titleTextColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+           android:layout_marginBottom="3dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="CALL TYPE"
+                android:layout_gravity="center"
+
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkboxPosition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Position"
+
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox
+                android:id="@+id/checkBoxIntraday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intraday"
+                android:onClick="onCheckboxClicked"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="CALL ACTION"
+                android:layout_gravity="center"
+
+
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+
+                android:onClick="onCheckboxClicked"/>
+            <CheckBox
+                android:id="@+id/checkBoxSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sell"
+                android:onClick="onCheckboxClicked"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/R_activityStock"
+
+
+            >
+
+            <EditText
+                android:elevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search your stock..."
+                android:id="@+id/searchTxt"
+
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:background="@drawable/rounded_white_background"
+                android:padding="10dp"
+                android:textAlignment="textStart"
+
+                android:layout_marginTop="10dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+
+            android:id="@+id/R2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_below="@+id/R_activityStock"
+            android:layout_above="@+id/btnsStock">
+
+            <android.support.v7.widget.RecyclerView
+
+                android:id="@+id/StockRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/btnsStock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+
+            >
+
+            <Button
+                android:id="@+id/btn_applyStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onApplyClicked"
+                android:background="@color/colorPrimary"
+                android:text="Apply"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
